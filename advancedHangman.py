@@ -11,14 +11,11 @@ def containLetter(string, char):
     return False
 
 
-
-
 # print a title bar
 def title_bar():
     print("--------------------------------------")
     print("--------------Hang Man----------------")
     print("--------------------------------------")
-
 
 
 def city_list():
@@ -68,9 +65,6 @@ def animal_list():
         print("I can't find file.")
 
 
-
-
-
 def categories():
     user_input = input("Type the name of the category you would like to play: cities, countries, or animals")
     if user_input == "countries":
@@ -108,8 +102,6 @@ def categories():
 
     else:
         return None
-
-
 
 
 # def categories():
@@ -199,7 +191,6 @@ while replay != "n":
                     word_so_far = word_so_far[0:i] + user_input + word_so_far[i + 1:]
 
 
-
         for letter in word_so_far:
             print( letter, end=" ")
         print()
@@ -238,8 +229,6 @@ while replay != "n":
         user_input = input("please guess a letter: ")
 
         user_inputList = ""
-
-
 
 
     elif replay == "n":
