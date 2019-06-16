@@ -1,8 +1,6 @@
 import pickle
 import random
 
-
-
 def containLetter(string, char):
 
     #function to return true if string contains char
@@ -40,7 +38,6 @@ def make_word_list():
         file.close()
     except:
         print("I can't find file.")
-
 
 
 def select_word():
@@ -114,7 +111,6 @@ user_inputList = ""
 
     # round = round +3 1
 
-
 for i in range(0, len(secret_word) + 7):
  user_inputList = user_inputList[0:i] + user_input + user_inputList[i + 1:]
     # if user_input not in word_so_far and user_inputList.__contains__(user_input):
@@ -179,8 +175,6 @@ while replay != "n":
         #     print("You already guessed that letter!")
 
 
-
-
     replay = input("Do you want to play again? enter y or n")
     if replay == "y":
         turn = 6
@@ -209,6 +203,3 @@ while replay != "n":
     elif (replay == "n"):
         print("Goodbye!")
         break
-
-
-
